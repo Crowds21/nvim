@@ -5,7 +5,8 @@
 
 ## TODOList
 
-- [] cmp
-- [] treesitter
-- [] telescope
-- [] dashboard? 
+- [ ] cmp
+- [ ] treesitter
+- [ ] telescope
+- [ ] dashboard? 
+- [ ] Kotlin Lsp
