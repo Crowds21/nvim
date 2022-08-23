@@ -84,6 +84,7 @@ vim.opt.breakindentopt = 'shift:2,min:20'
 vim.opt.wrap = false
 vim.opt.linebreak = true
 vim.opt.number = true
+vim.opt.relativenumber=true
 vim.opt.colorcolumn = '80'
 vim.opt.foldenable = true
 vim.opt.signcolumn = 'yes'

@@ -67,15 +67,15 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("n","<leader>e",cmd('NvimTreeToggle'),opts)
 
 -- Telescope
-nmap({
-  { '<Leader>b', cmd('Telescope buffers'), opts },
-  { '<Leader>fa', cmd('Telescope live_grep'), opts },
-  { '<Leader>ff', cmd('Telescope find_files'), opts },
-})
+--nmap({
+--  { '<Leader>b', cmd('Telescope buffers'), opts },
+--  { '<Leader>fa', cmd('Telescope live_grep'), opts },
+--  { '<Leader>ff', cmd('Telescope find_files'), opts },
+--)
 
 -- Reload Config File
 nmap({
-  {'<Leader>rl',cmd('source $MYVIMRC$'), opts}
+  {'<Leader>r',cmd('source $MYVIMRC$'), opts}
 })
 
 

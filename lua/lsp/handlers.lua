@@ -15,7 +15,7 @@ M.setup = function()
 
 	local config = {
 		-- disable virtual text
-		virtual_text = false,
+		virtual_text = true ,
 		-- show signs
 		signs = {
 			active = signs,
@@ -26,10 +26,10 @@ M.setup = function()
 		float = {
 			focusable = false,
 			style = "minimal",
-			border = "rounded",
-			source = "always",
-			header = "",
-			prefix = "",
+			border = "rounded", -- 
+			source = "always", -- Include the diagnostic source in the message
+			header = "", --  String to use as the header for the floating window
+			prefix = "", -- prefix each diagnostic in the  f loating window
 		},
 	}
 

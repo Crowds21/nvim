@@ -48,6 +48,7 @@ return packer.startup(function(use)
   use({'glepnir/zephyr-nvim'})
   use({'kyazdani42/nvim-tree.lua'})
   use({ "akinsho/bufferline.nvim"})
+  use({ "moll/vim-bbye"})
 
   -- Lsp
   use({ "neovim/nvim-lspconfig"})
@@ -55,7 +56,15 @@ return packer.startup(function(use)
 
   -- Completion
   use({ "hrsh7th/nvim-cmp"})
-
+  use({ "saadparwaiz1/cmp_luasnip"})
+  use({ "hrsh7th/cmp-buffer"})
+  use({ "hrsh7th/cmp-path"})
+  use({ "hrsh7th/cmp-nvim-lsp"})
+  use({ "hrsh7th/cmp-nvim-lua"})
+  use({ "windwp/nvim-autopairs"})
+  -- snippets
+	use({ "L3MON4D3/LuaSnip"})
+  use({ "rafamadriz/friendly-snippets"})
   -- Treesitter
   use({"nvim-treesitter/nvim-treesitter"})
   use({ "hrsh7th/cmp-buffer"})
@@ -64,8 +73,13 @@ return packer.startup(function(use)
   use({ "hrsh7th/cmp-nvim-lsp"})
   use({ "hrsh7th/cmp-nvim-lua"})
 
-  -- Telescope
+  -- Tools 
+  use({ "nvim-lua/plenary.nvim"})
 	use({ "nvim-telescope/telescope.nvim"})
+  use("folke/which-key.nvim")
+  use({"lewis6991/gitsigns.nvim"})
+
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then

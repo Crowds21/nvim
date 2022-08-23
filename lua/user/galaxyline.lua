@@ -137,7 +137,7 @@ gls.mid[1] = {
       return true
     end,
     highlight = { colors.yellow, colors.bg, 'bold' },
-    icon = ' LSP:',
+    icon = ' ',
     provider = 'GetLspClient',
   },
 }
@@ -165,7 +165,7 @@ gls.right[2] = {
 gls.right[3] = {
   GitIcon = {
     provider = function()
-      return '  '
+      return '  '
     end,
     condition = condition.check_git_workspace,
     highlight = { colors.violet, colors.bg, 'bold' },
