@@ -52,7 +52,7 @@ return packer.startup(function(use)
 
   -- Lsp
   use({ "neovim/nvim-lspconfig"})
-  use { "williamboman/mason.nvim" }
+  use { "williamboman/nvim-lsp-installer" }
 
   -- Completion
   use({ "hrsh7th/nvim-cmp"})
