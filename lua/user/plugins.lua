@@ -49,6 +49,7 @@ return packer.startup(function(use)
   use({'kyazdani42/nvim-tree.lua'})
   use({ "akinsho/bufferline.nvim"})
   use({ "moll/vim-bbye"})
+  use({'ryanoasis/vim-devicons'})
 
   -- Lsp
   use({ "neovim/nvim-lspconfig"})
@@ -72,6 +73,7 @@ return packer.startup(function(use)
   use({ "saadparwaiz1/cmp_luasnip"})
   use({ "hrsh7th/cmp-nvim-lsp"})
   use({ "hrsh7th/cmp-nvim-lua"})
+  use({"fladson/vim-kitty"})
 
   -- Tools 
   use({ "nvim-lua/plenary.nvim"})

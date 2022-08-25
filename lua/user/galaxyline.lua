@@ -7,10 +7,15 @@ if not status_ok then
   return
 end
 
+local status_ok, galaxyline = pcall(require, 'galaxyline')
+if not status_ok then
+  return
+end
+
 local colors = require('galaxyline.theme').default
 local condition = require('galaxyline.condition')
 local gls = galaxyline.section
-galaxyline.short_line_list = { 'NvimTree', 'vista', 'dbui', 'packer' }
+galaxyline.short_line_list = { 'NvimTree', 'vista', 'dbui', 'packer', 'lspsagaoutline' }
 
 gls.left[1] = {
   RainbowRed = {
@@ -47,7 +52,9 @@ gls.left[2] = {
         v = colors.blue,
         V = colors.blue,
       }
-      vim.api.nvim_command('hi GalaxyViMode guifg=' .. mode_color[vim.fn.mode()] .. ' guibg=' .. colors.bg)
+      vim.api.nvim_command(
+        'hi GalaxyViMode guifg=' .. mode_color[vim.fn.mode()] .. ' guibg=' .. colors.bg
+      )
       return '  '
     end,
   },
@@ -137,7 +144,7 @@ gls.mid[1] = {
       return true
     end,
     highlight = { colors.yellow, colors.bg, 'bold' },
-    icon = ' ',
+    icon = ' LSP:',
     provider = 'GetLspClient',
   },
 }
@@ -165,7 +172,7 @@ gls.right[2] = {
 gls.right[3] = {
   GitIcon = {
     provider = function()
-      return '  '
+      return '  '
     end,
     condition = condition.check_git_workspace,
     highlight = { colors.violet, colors.bg, 'bold' },
@@ -184,6 +191,7 @@ gls.right[4] = {
 
 gls.right[5] = {
   Separator = {
+    highlight = { colors.fg, colors.bg, 'bold' },
     provider = function()
       return ' '
     end,

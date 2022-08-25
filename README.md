@@ -1,7 +1,19 @@
 
-参考自
+
+## Reference
 - https://github.com/LunarVim/Neovim-from-scratch
 - https://github.com/glepnir/cosynvim
+
+## Font
+Need to Install [Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack)
+`Hack Nerd Font XXXX Complete Mono Windows Compatible.ttf` for  Windows system.
+`Hack Nerd Font XXXX Complete Mono.ttf` for MacOS
+You need to install a regult Hack font, a bold Hack font, a italic Hack font and
+a bold italic font.
+Then, set your terminal font to Hack Nerd Font Mono.
+
+
+
 
 ## TODOList
 
