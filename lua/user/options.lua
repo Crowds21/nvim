@@ -88,7 +88,8 @@ vim.opt.relativenumber=true
 vim.opt.colorcolumn = '80'
 vim.opt.foldenable = true
 vim.opt.signcolumn = 'yes'
-vim.opt.conceallevel = 2
+-- 设置为2 会导致看不到 json 文件中的引号
+vim.opt.conceallevel = 0
 vim.opt.concealcursor = 'niv'
 
 if vim.loop.os_uname().sysname == 'Darwin' then
