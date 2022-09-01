@@ -9,17 +9,11 @@ require('user.gitsigns')
 require('lsp')
 require('user.autopairs')
 -- Get zephyr color
-require('zephyr')
+require('user.colorscheme')
 require('user.keymaps')
 require('user.galaxyline')
 require('user.bufferline')
+-- Input method switcher
+require('user.im-select')
 
 
--- Modify Theme Color
-local syntax = {
-  -- Line Number
-  LineNr = {fg='#F0E68C'}
-}
-for group,conf in pairs(syntax) do
-  vim.api.nvim_set_hl(0,group,conf)
-end

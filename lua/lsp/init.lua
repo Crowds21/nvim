@@ -6,3 +6,4 @@ end
 require("lsp.configs")
 require("lsp.handlers").setup()
 require("lsp.cmp")
+require("lsp.lspsaga")

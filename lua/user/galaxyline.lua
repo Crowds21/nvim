@@ -6,11 +6,7 @@ local status_ok, galaxyline = pcall(require, 'galaxyline')
 if not status_ok then
   return
 end
-
-local status_ok, galaxyline = pcall(require, 'galaxyline')
-if not status_ok then
-  return
-end
+vim.opt.laststatus=3
 
 local colors = require('galaxyline.theme').default
 local condition = require('galaxyline.condition')

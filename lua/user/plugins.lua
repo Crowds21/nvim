@@ -1,5 +1,4 @@
 local fn = vim.fn
-
 -- Automatically install packer
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
@@ -54,6 +53,7 @@ return packer.startup(function(use)
   -- Lsp
   use({ "neovim/nvim-lspconfig"})
   use { "williamboman/nvim-lsp-installer" }
+  use({"glepnir/lspsaga.nvim"})
 
   -- Completion
   use({ "hrsh7th/nvim-cmp"})
@@ -80,6 +80,7 @@ return packer.startup(function(use)
 	use({ "nvim-telescope/telescope.nvim"})
   use("folke/which-key.nvim")
   use({"lewis6991/gitsigns.nvim"})
+  use({"keaising/im-select.nvim"})
 
 
 	-- Automatically set up your configuration after cloning packer.nvim
